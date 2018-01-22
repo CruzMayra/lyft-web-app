@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -9,19 +10,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/main.css">
     <title>Lyft</title>
   </head>
   <body>
-    <section class="container-fluid" id="signup-form">
-      <section class="row">
-        <div class="col-12 col-md-12 col-lg-12">
-          <a href="../index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
-        </div>
-      </section>
+    <section class="container" id="signup-form">
 
       <section class="row">
-        <section class="col-12 col-md-12 col-lg-12">
+        <section class="col-1 col-md-1 col-lg-1"> <!-- icono para regresar a la página anterior -->
+          <a href="../index.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </section>
+        <section class="col-11 col-md-11 col-lg-11">
           <h2>Sign Up</h2>
           <h5>Join now for free ride credit</h5>
         </section>
@@ -31,18 +31,22 @@
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="input-country">Country</label>
-            <select id="input-country" class="form-control">
-              <option selected>Choose...</option>
-              <option></option>
-              <option></option>
-              <option></option>
-            </select>
+            <div class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/mexico-flag.png" alt="mex-flag"> <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><img src="../assets/images/colombia-flag.png" alt="colombia-flag"></a></li>
+                    <li><a href="#"><img src="../assets/images/chile-flag.png" alt="chile-flag"></a></li>
+                    <li><a href="#"><img src="../assets/images/usa-flag.jpg" alt="usa-flag"></a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="form-group col-md-8">
+              <label for="input-phone-number">Phone number</label>
+              <input type="text" class="form-control form-control-lg" id="phone-number">
+            </div>
           </div>
-          <div class="form-group col-md-2">
-            <label for="input-phone-number">Phone number</label>
-            <input type="text" class="form-control" id="phone-number">
           </div>
-        </div>
+
         <p>We'll  send a text to verify your phone</p>
         <button type="submit" class="btn btn-primary"> <a href="verify-view.html">NEXT</a> </button>
       </form>
