@@ -2,7 +2,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-#view-splash {
+#view-splash,
+#finish {
   background: linear-gradient(to bottom right,#5A0062, #C90881);
   height: 100vh;
   display: flex;
@@ -49,20 +50,23 @@ body {
 }
 
 #signup-form > section,
-#verify-form > section {
+#verify-form > section,
+#agree > section {
   margin: 5% 0;
   border-bottom: 1px solid #C90881;
 }
 
 #signup-form > section > section > a > i,
-#verify-form > section > section.col-1.col-md-1.col-lg-1 > a > i { /* icono para regresar de página*/
+#verify-form > section > section.col-1.col-md-1.col-lg-1 > a > i,
+#agree > section > section.col-1.col-md-1.col-lg-1 > a > i { /* icono para regresar de página*/
   color: #C90881;
   font-size: 5em;
   text-decoration: none;
 }
 
 #signup-form > section > section.col-11.col-md-11.col-lg-11,
-#verify-form > section > section.col-11.col-md-11.col-lg-11 {
+#verify-form > section > section.col-11.col-md-11.col-lg-11,
+#agree > section > section.col-11.col-md-11.col-lg-11 {
   text-align: center;
 }
 
@@ -74,7 +78,10 @@ body {
 }
 
 #phone-number,
-#verify-code { /* estilos para el input del número*/
+#verify-code,
+#agree > form > div:nth-child(1) > div:nth-child(1) > input,
+#agree > form > div:nth-child(1) > div:nth-child(2) > input,
+#agree > form > div:nth-child(2) > div > input { /* estilos para el input del número*/
     border: 1px solid #C90881;
 }
 
@@ -93,7 +100,9 @@ body {
 
 #signup-form > form > p,  /* estilos para alinear texto y botón de formulario */
 #signup-form > form > button,
-#verify-form > form > div:nth-child(2) {
+#verify-form > form > div:nth-child(2),
+#agree > form > div:nth-child(2) > div > input,
+#agree > form > button {
   margin: 5% 0;
 }
 
@@ -102,7 +111,8 @@ body {
 }
 
 #signup-form > form > button,
-#verify-form > form > button { /* estilos para el botón que dirige a la siguiente vista*/
+#verify-form > form > button,
+#agree > form > button { /* estilos para el botón que dirige a la siguiente vista*/
   background-color: #C90881;
   border: none;
   font-size: 1.5em;
@@ -112,7 +122,22 @@ body {
 
 #signup-form > form > button > a,
 #verify-form > form > div:nth-child(2) > button > a,
-#verify-form > form > button > a {
+#verify-form > form > button > a,
+#agree > form > button > a {
   text-decoration: none;
   color: white;
+}
+
+#finish {
+  color: white;
+  font-size: 10em;
+  flex-direction: column;
+}
+
+#finish > div:nth-child(1) {
+  text-align: center;
+}
+
+#finish > div:nth-child(3) {
+  width: 60%;
 }
