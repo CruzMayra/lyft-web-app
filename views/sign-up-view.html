@@ -9,31 +9,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Lyft</title>
   </head>
   <body>
-    <main class="container-fluid" id="view-splash">
-      <div>
-        <img class="rounded mx-auto d-block img-fluid" src="assets/images/logo-white.png" alt="logo-lyft-white">
-      </div>
-    </main>
-
-    <section class="container-fluid" id="signup">
+    <section class="container-fluid" id="signup-form">
       <section class="row">
         <div class="col-12 col-md-12 col-lg-12">
-            <img class="rounded mx-auto d-block img-fluid" src="assets/images/logo-pink.png" alt="logo-lyft-pink">
+          <a href="../index.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
         </div>
       </section>
 
-      <section class="row signup-button">
-        <div class="col-12 col-md-12 col-lg-12">
-          <button type="button" class="btn btn-outline-light btn-lg">LOG IN</button>
-          <button type="button" class="btn btn-outline-light btn-lg"> <a href="views/sign-up-view.html">SIGN UP</a></button>
-        </div>
+      <section class="row">
+        <section class="col-12 col-md-12 col-lg-12">
+          <h2>Sign Up</h2>
+          <h5>Join now for free ride credit</h5>
+        </section>
       </section>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="input-country">Country</label>
+            <select id="input-country" class="form-control">
+              <option selected>Choose...</option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="input-phone-number">Phone number</label>
+            <input type="text" class="form-control" id="phone-number">
+          </div>
+        </div>
+        <p>We'll  send a text to verify your phone</p>
+        <button type="submit" class="btn btn-primary"> <a href="verify-view.html">NEXT</a> </button>
+      </form>
     </section>
-
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
   </body>
 </html>

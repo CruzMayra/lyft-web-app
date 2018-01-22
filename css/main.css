@@ -6,13 +6,40 @@
   align-items: center;
 }
 
-#view-splash > div > img {
+#view-splash > div > img,
+#signup > section > div > img {
   width: auto;
   height: auto;
   max-width: 752.22px;
   max-height: 532.98px;
 }
 
-#view-splash > div {
+#view-splash > div,
+#signup > section > section {
   width: 80%;
+}
+
+#signup {
+  background-image: url('../assets/images/car-drive.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: none;
+}
+
+#signup > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+#signup > section.signup-button {
+  text-align: center;
+  height: 10vh;
+}
+
+#signup > section.row.signup-button > div > button:nth-child(2) > a {
+  text-decoration: none;
+  color: white;
 }
