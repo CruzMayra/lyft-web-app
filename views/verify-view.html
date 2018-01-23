@@ -15,7 +15,7 @@
   </head>
   <body>
     <section class="container" id="verify-form">
-      
+
       <section class="row">
         <section class="col-1 col-md-1 col-lg-1"> <!-- icono para regresar a la página anterior -->
           <a href="sign-up-view.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
@@ -29,12 +29,12 @@
       <form>
         <div class="form-group">
           <input type="email" class="form-control" id="verify-code" aria-describedby="emailHelp" placeholder="LAB-000">
-          <label for="exampleInputEmail1">Enter the code send to <span>5511223344</span></label>
+          <label for="exampleInputEmail1">Enter the code send to <span class="phone-number-entered"></span></label>
         </div>
         <div class="form-group">
           <button type="button" class="btn btn-secondary"><a href="sign-up-view.html">Resend code</a></button>
         </div>
-        <button type="submit" class="btn btn-primary"> <a href="agree-view.html">NEXT</a> </button>
+        <button type="submit" class="btn btn-primary verify-code-next" disabled> <a class="to-agree-view"href="#">NEXT</a> </button>
       </form>
 
     </section>
